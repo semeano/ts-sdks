@@ -56,7 +56,7 @@
 		"vite": "^7.1.5"
 	},
 	"dependencies": {
-		"@mysten/signers": "workspace:*",
+		"@semeano/signers": "workspace:*",
 		"@mysten/sui": "workspace:*",
 		"@mysten/wallet-standard": "workspace:*",
 		"@nanostores/react": "^1.0.0",
