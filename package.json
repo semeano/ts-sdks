@@ -1,6 +1,6 @@
 {
 	"name": "@mysten/ts-sdks",
-	"private": true,
+	"private": false,
 	"license": "Apache-2.0",
 	"scripts": {
 		"test": "turbo run test",
@@ -15,7 +15,7 @@
 		"lint:fix": "pnpm run eslint:fix && pnpm run prettier:fix",
 		"build": "turbo run build"
 	},
-	"packageManager": "pnpm@10.17.0",
+	"packageManager": "pnpm@10.18.3",
 	"pnpm": {
 		"overrides": {
 			"node-notifier": "10.0.0",

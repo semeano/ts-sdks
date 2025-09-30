@@ -1,9 +1,9 @@
 {
 	"name": "@mysten/signers",
-	"version": "0.5.8",
+	"version": "0.1.16",
 	"description": "A collection of signers for various providers",
 	"license": "Apache-2.0",
-	"author": "Mysten Labs <build@mystenlabs.com>",
+	"author": "Pedro Semeano",
 	"type": "commonjs",
 	"exports": {
 		"./aws": {
@@ -64,10 +64,11 @@
 	},
 	"dependencies": {
 		"@google-cloud/kms": "^4.5.0",
-		"@mysten/ledgerjs-hw-app-sui": "workspace:*",
-		"@mysten/sui": "workspace:*",
-		"@noble/curves": "=1.9.4",
+		"@ledgerhq/devices": "^8.6.1",
+		"@mysten/sui": "^1.38.0",
+		"@noble/curves": "^1.9.4",
 		"@noble/hashes": "^1.8.0",
+		"@mysten/ledgerjs-hw-app-sui": "0.2.11",
 		"asn1-ts": "^8.0.2"
 	},
 	"engines": {
