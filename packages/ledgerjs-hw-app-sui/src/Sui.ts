@@ -29,7 +29,7 @@ export type Resolution = {
 	deviceModelId?: DeviceModelId | undefined;
 	certificateSignatureKind?: 'prod' | 'test' | undefined;
 	tokenAddress?: string;
-	tokenInternalId?: string;
+	tokenId?: string;
 };
 
 export type AppConfig = {
@@ -208,7 +208,7 @@ export default class Sui {
 					}
 				}
 
-				if (resolution.tokenInternalId) {
+				if (resolution.tokenId) {
 					const { descriptor: coinMetaDescriptor, signature: coinMetaSignature } =
 						await calService.getCertificate(resolution.deviceModelId, 'coin_meta', 'latest', {
 							signatureKind: resolution.certificateSignatureKind,
@@ -217,7 +217,7 @@ export default class Sui {
 					await tryLoadPKI(this.transport, 'COIN_META', coinMetaDescriptor, coinMetaSignature);
 
 					const token = await calService.findToken(
-						{ id: resolution.tokenInternalId },
+						{ id: resolution.tokenId },
 						{ signatureKind: resolution.certificateSignatureKind },
 					);
 

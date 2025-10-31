@@ -1,6 +1,6 @@
 {
 	"name": "@semeano/signers",
-	"version": "0.1.10",
+	"version": "0.1.12",
 	"description": "A collection of signers for various providers",
 	"license": "Apache-2.0",
 	"author": "Pedro Semeano",
@@ -68,7 +68,7 @@
 		"@mysten/sui": "^1.38.0",
 		"@noble/curves": "^1.9.4",
 		"@noble/hashes": "^1.8.0",
-		"@semeano/ledgerjs-hw-app-sui": "0.2.5",
+		"@semeano/ledgerjs-hw-app-sui": "0.2.7",
 		"asn1-ts": "^8.0.2"
 	},
 	"engines": {

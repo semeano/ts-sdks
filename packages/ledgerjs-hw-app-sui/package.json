@@ -1,6 +1,6 @@
 {
 	"name": "@semeano/ledgerjs-hw-app-sui",
-	"version": "0.2.5",
+	"version": "0.2.7",
 	"description": "Ledger Hardware Wallet Sui Application API",
 	"keywords": [
 		"Ledger",
