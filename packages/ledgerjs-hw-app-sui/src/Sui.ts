@@ -9,8 +9,8 @@ import { TransportStatusError } from '@ledgerhq/hw-transport';
 import calService from '@ledgerhq/ledger-cal-service';
 import sha256 from 'fast-sha256';
 import semver from 'semver';
-import type { DescriptorInput } from './descriptor';
-import { buildDescriptor } from './descriptor';
+import type { DescriptorInput } from './descriptor.js';
+import { buildDescriptor } from './descriptor.js';
 
 export type GetPublicKeyResult = {
 	publicKey: Uint8Array;
